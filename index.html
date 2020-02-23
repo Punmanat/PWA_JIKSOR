@@ -7,12 +7,52 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      ;
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Akronim&display=swap"
+      rel="stylesheet"
     />
     <style>
+      @font-face {
+        font-family: digital-7;
+        src: url("digital-7.ttf");
+      }
+      body {
+        background: #fff5ee;
+        animation: mymove 13s infinite;
+      }
+      @keyframes mymove {
+        80% {
+          background-color: #f5f5dc;
+        }
+      }
+      h3 {
+        color: rgb(231, 35, 9);
+        letter-spacing: 3px;
+        /* font-size: 100px ; */
+        font-family: "Akronim";
+      }
+      p {
+        font-family: digital-7;
+        font-size: 30px;
+      }
+      #startbtn1 {
+        background-color: #2ecc71 !important;
+      }
+      #startbtn2 {
+        background-color: #f1c40f !important;
+      }
+      #startbtn3 {
+        background-color: #3498db !important;
+      }
+      #backbotton {
+        background-color: #99a3a4;
+      }
       .box {
         width: 50%;
         height: 200px;
-        border: 1px solid black;
+        border: 1px solid#99A3A4;
         position: relative;
       }
       .img-sub {
@@ -104,7 +144,11 @@
           />
         </div>
         <div class="d-flex justify-content-center mt-2">
-          <button onclick="reset()" class="btn btn-danger align-center w-100">
+          <button
+            onclick="reset()"
+            class="btn btn-danger align-center w-100"
+            id="backbotton"
+          >
             Back
           </button>
         </div>
